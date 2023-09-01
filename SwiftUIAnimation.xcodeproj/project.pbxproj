@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D340614B2AA1202D005208B1 /* SpeedoMeter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D340614A2AA1202D005208B1 /* SpeedoMeter.swift */; };
 		D3C767492AA069FE002B4213 /* SwiftUIAnimationApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C767482AA069FE002B4213 /* SwiftUIAnimationApp.swift */; };
 		D3C7674B2AA069FE002B4213 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C7674A2AA069FE002B4213 /* ContentView.swift */; };
 		D3C7674D2AA069FF002B4213 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3C7674C2AA069FF002B4213 /* Assets.xcassets */; };
@@ -14,6 +15,8 @@
 		D3C7675A2AA069FF002B4213 /* SwiftUIAnimationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C767592AA069FF002B4213 /* SwiftUIAnimationTests.swift */; };
 		D3C767642AA069FF002B4213 /* SwiftUIAnimationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C767632AA069FF002B4213 /* SwiftUIAnimationUITests.swift */; };
 		D3C767662AA069FF002B4213 /* SwiftUIAnimationUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C767652AA069FF002B4213 /* SwiftUIAnimationUITestsLaunchTests.swift */; };
+		D3C767752AA06A45002B4213 /* Expense.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C767742AA06A45002B4213 /* Expense.swift */; };
+		D3C767772AA06C2F002B4213 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C767762AA06C2F002B4213 /* Home.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D340614A2AA1202D005208B1 /* SpeedoMeter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeedoMeter.swift; sourceTree = "<group>"; };
 		D3C767452AA069FE002B4213 /* SwiftUIAnimation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIAnimation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3C767482AA069FE002B4213 /* SwiftUIAnimationApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIAnimationApp.swift; sourceTree = "<group>"; };
 		D3C7674A2AA069FE002B4213 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -44,6 +48,8 @@
 		D3C7675F2AA069FF002B4213 /* SwiftUIAnimationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftUIAnimationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3C767632AA069FF002B4213 /* SwiftUIAnimationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIAnimationUITests.swift; sourceTree = "<group>"; };
 		D3C767652AA069FF002B4213 /* SwiftUIAnimationUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIAnimationUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		D3C767742AA06A45002B4213 /* Expense.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Expense.swift; sourceTree = "<group>"; };
+		D3C767762AA06C2F002B4213 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +100,8 @@
 		D3C767472AA069FE002B4213 /* SwiftUIAnimation */ = {
 			isa = PBXGroup;
 			children = (
+				D3C767732AA06A3A002B4213 /* Model */,
+				D3C767722AA06A37002B4213 /* View */,
 				D3C767482AA069FE002B4213 /* SwiftUIAnimationApp.swift */,
 				D3C7674A2AA069FE002B4213 /* ContentView.swift */,
 				D3C7674C2AA069FF002B4213 /* Assets.xcassets */,
@@ -125,6 +133,23 @@
 				D3C767652AA069FF002B4213 /* SwiftUIAnimationUITestsLaunchTests.swift */,
 			);
 			path = SwiftUIAnimationUITests;
+			sourceTree = "<group>";
+		};
+		D3C767722AA06A37002B4213 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D3C767762AA06C2F002B4213 /* Home.swift */,
+				D340614A2AA1202D005208B1 /* SpeedoMeter.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D3C767732AA06A3A002B4213 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D3C767742AA06A45002B4213 /* Expense.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,7 +282,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D3C767752AA06A45002B4213 /* Expense.swift in Sources */,
 				D3C7674B2AA069FE002B4213 /* ContentView.swift in Sources */,
+				D340614B2AA1202D005208B1 /* SpeedoMeter.swift in Sources */,
+				D3C767772AA06C2F002B4213 /* Home.swift in Sources */,
 				D3C767492AA069FE002B4213 /* SwiftUIAnimationApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
