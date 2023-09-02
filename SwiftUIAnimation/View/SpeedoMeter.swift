@@ -54,8 +54,36 @@ struct SpeedoMeter: View {
         }
         .overlay(alignment: .bottom, content: {
             HStack {
+                Text("0%")
+                    .font(.system(size: 15, weight: .semibold))
                 
+                Spacer()
+                
+                Text("\(Int(progress * 100))%")
+                    .font(.system(size: 15, weight: .semibold))
             }
+            .offset(y: 35)
+        })
+        .overlay(alignment: .bottom, content: {
+            // MARK: Indicator
+            Indicator()
+                .fill(Color("Indicator"))
+                .overlay(alignment: .bottom, content: {
+                    Circle()
+                        .fill(Color("Indicator"))
+                        .frame(width: 30, height: 30)
+                        .overlay {
+                            Circle()
+                                .fill(Color("BG"))
+                                .padding(6)
+                        }
+                        .offset(y: 10)
+                })
+                .frame(width: 25)
+                .padding(.top, 40)
+                .rotationEffect(.init(degrees: -90), anchor: .bottom)
+                .rotationEffect(.init(degrees: progress * 180), anchor: .bottom)
+                .offset(y: -5)
         })
         .padding(.top)
         .padding(10)

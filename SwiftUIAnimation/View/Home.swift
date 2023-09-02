@@ -78,6 +78,11 @@ struct Home: View {
             Color("BG")
                 .ignoresSafeArea()
         }
+        .onTapGesture {
+            withAnimation {
+                progress = 0.8
+            }
+        }
     }
 }
 

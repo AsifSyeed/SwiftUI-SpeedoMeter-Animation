@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D300CD6A2AA3B3380036BC7F /* Indicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D300CD692AA3B3380036BC7F /* Indicator.swift */; };
 		D340614B2AA1202D005208B1 /* SpeedoMeter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D340614A2AA1202D005208B1 /* SpeedoMeter.swift */; };
 		D3C767492AA069FE002B4213 /* SwiftUIAnimationApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C767482AA069FE002B4213 /* SwiftUIAnimationApp.swift */; };
 		D3C7674B2AA069FE002B4213 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C7674A2AA069FE002B4213 /* ContentView.swift */; };
@@ -37,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D300CD692AA3B3380036BC7F /* Indicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Indicator.swift; sourceTree = "<group>"; };
 		D340614A2AA1202D005208B1 /* SpeedoMeter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeedoMeter.swift; sourceTree = "<group>"; };
 		D3C767452AA069FE002B4213 /* SwiftUIAnimation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIAnimation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3C767482AA069FE002B4213 /* SwiftUIAnimationApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIAnimationApp.swift; sourceTree = "<group>"; };
@@ -140,6 +142,7 @@
 			children = (
 				D3C767762AA06C2F002B4213 /* Home.swift */,
 				D340614A2AA1202D005208B1 /* SpeedoMeter.swift */,
+				D300CD692AA3B3380036BC7F /* Indicator.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -283,6 +286,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D3C767752AA06A45002B4213 /* Expense.swift in Sources */,
+				D300CD6A2AA3B3380036BC7F /* Indicator.swift in Sources */,
 				D3C7674B2AA069FE002B4213 /* ContentView.swift in Sources */,
 				D340614B2AA1202D005208B1 /* SpeedoMeter.swift in Sources */,
 				D3C767772AA06C2F002B4213 /* Home.swift in Sources */,
