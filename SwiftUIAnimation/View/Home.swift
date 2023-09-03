@@ -45,7 +45,7 @@ struct Home: View {
                     .fontWeight(.semibold)
                     .foregroundColor(.white.opacity(0.7))
                 
-                AnimatedNumberText(value: progress * 1299, font: .system(size: 35, weight: .black))
+                AnimatedNumberText(value: progress * 1299, font: .system(size: 35, weight: .black), isCurrency: true)
                     .foregroundColor(Color("Green"))
                     .padding(.top, 5)
                     .lineLimit(1)
@@ -99,6 +99,9 @@ struct Home: View {
                             }
                         }
                     }
+                    
+                    bottomContent()
+                        .padding(.top)
                 }
                 .padding()
             }
@@ -109,6 +112,37 @@ struct Home: View {
         .background {
             Color("BG")
                 .ignoresSafeArea()
+        }
+    }
+    
+    // MARK: Bottom content
+    
+    @ViewBuilder
+    func bottomContent() -> some View {
+        VStack(spacing: 15) {
+            ForEach(expenses) { expense in
+                HStack(spacing: 12) {
+                    Image(expense.icon)
+                        .resizable()
+                        .renderingMode(.template)
+                        .aspectRatio(contentMode: .fit)
+                        .frame(width: 35, height: 35)
+                        .foregroundColor(.white)
+                    
+                    VStack(alignment: .leading, spacing: 8) {
+                        Text(expense.title)
+                            .fontWeight(.bold)
+                        
+                        Text(expense.subTitle)
+                            .font(.caption)
+                            .foregroundColor(.gray)
+                    }
+                    .frame(maxWidth: .infinity, alignment: .leading)
+                    
+                    Text(expense.amount)
+                        .fontWeight(.bold)
+                }
+            }
         }
     }
     

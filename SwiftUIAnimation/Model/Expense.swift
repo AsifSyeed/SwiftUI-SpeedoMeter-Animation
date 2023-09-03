@@ -17,9 +17,12 @@ struct Expense: Identifiable {
 }
 
 var expenses: [Expense] = [
-    Expense(icon: "Food", title: "Food", subTitle: "Starbucks", amount: "$14.00"),
+    Expense(icon: "netflix", title: "Netflix", subTitle: "Subscription", amount: "$12.99"),
+    Expense(icon: "food", title: "Food", subTitle: "Starbucks", amount: "$14.00"),
     Expense(icon: "taxi", title: "Taxi", subTitle: "Uber payment", amount: "$24.90"),
-    Expense(icon: "netflix ", title: "Netflix", subTitle: "Subscription", amount: "$12.99")
+    Expense(icon: "netflix", title: "Netflix", subTitle: "Subscription", amount: "$12.99"),
+    Expense(icon: "food", title: "Food", subTitle: "Starbucks", amount: "$14.00"),
+    Expense(icon: "taxi", title: "Taxi", subTitle: "Uber payment", amount: "$24.90")
 ]
 
 let months: [String] = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
