@@ -9,6 +9,9 @@ import SwiftUI
 
 struct Home: View {
     @State var progress: CGFloat = 0.5
+    @State var currentMonth: String = "Jan"
+    @Namespace var animation
+    
     var body: some View {
         VStack(spacing: 15) {
             HStack {
@@ -42,8 +45,7 @@ struct Home: View {
                     .fontWeight(.semibold)
                     .foregroundColor(.white.opacity(0.7))
                 
-                Text("$1299.00")
-                    .font(.system(size: 35, weight: .black))
+                AnimatedNumberText(value: progress * 1299, font: .system(size: 35, weight: .black))
                     .foregroundColor(Color("Green"))
                     .padding(.top, 5)
                     .lineLimit(1)
@@ -71,6 +73,36 @@ struct Home: View {
             }
             .padding(.top, 15)
             .padding(.horizontal, 15)
+            
+            ScrollView(.vertical, showsIndicators: false) {
+                VStack(spacing: 15) {
+                    ScrollView(.horizontal, showsIndicators: false) {
+                        HStack(spacing: 8) {
+                            ForEach(months, id: \.self) { month in
+                                Text(month)
+                                    .font(.callout)
+                                    .padding(.vertical, 8)
+                                    .padding(.horizontal, 15)
+                                    .background {
+                                        if currentMonth == month {
+                                            Capsule()
+                                                .fill(.black)
+                                                .matchedGeometryEffect(id: "MONTH", in: animation)
+                                        }
+                                    }
+                                    .onTapGesture {
+                                        withAnimation(.interactiveSpring(response: 0.7, dampingFraction: 0.8, blendDuration: 0)) {
+                                            currentMonth = month
+                                            progress = progressArray[getIndex(month: month)]
+                                        }
+                                    }
+                            }
+                        }
+                    }
+                }
+                .padding()
+            }
+            .padding(.top, 30)
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .top)
         .padding(.top, 15)
@@ -78,11 +110,13 @@ struct Home: View {
             Color("BG")
                 .ignoresSafeArea()
         }
-        .onTapGesture {
-            withAnimation {
-                progress = 0.8
-            }
-        }
+    }
+    
+    // MARK: Retrieving Index
+    func getIndex(month: String) -> Int {
+        return months.firstIndex { value in
+            return month == value
+        } ?? 0
     }
 }
 

@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		D300CD6A2AA3B3380036BC7F /* Indicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D300CD692AA3B3380036BC7F /* Indicator.swift */; };
 		D340614B2AA1202D005208B1 /* SpeedoMeter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D340614A2AA1202D005208B1 /* SpeedoMeter.swift */; };
+		D36F84CE2AA454270085D8C5 /* AnimatedNumberText.swift in Sources */ = {isa = PBXBuildFile; fileRef = D36F84CD2AA454270085D8C5 /* AnimatedNumberText.swift */; };
 		D3C767492AA069FE002B4213 /* SwiftUIAnimationApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C767482AA069FE002B4213 /* SwiftUIAnimationApp.swift */; };
 		D3C7674B2AA069FE002B4213 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C7674A2AA069FE002B4213 /* ContentView.swift */; };
 		D3C7674D2AA069FF002B4213 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3C7674C2AA069FF002B4213 /* Assets.xcassets */; };
@@ -40,6 +41,7 @@
 /* Begin PBXFileReference section */
 		D300CD692AA3B3380036BC7F /* Indicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Indicator.swift; sourceTree = "<group>"; };
 		D340614A2AA1202D005208B1 /* SpeedoMeter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeedoMeter.swift; sourceTree = "<group>"; };
+		D36F84CD2AA454270085D8C5 /* AnimatedNumberText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedNumberText.swift; sourceTree = "<group>"; };
 		D3C767452AA069FE002B4213 /* SwiftUIAnimation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIAnimation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3C767482AA069FE002B4213 /* SwiftUIAnimationApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIAnimationApp.swift; sourceTree = "<group>"; };
 		D3C7674A2AA069FE002B4213 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -143,6 +145,7 @@
 				D3C767762AA06C2F002B4213 /* Home.swift */,
 				D340614A2AA1202D005208B1 /* SpeedoMeter.swift */,
 				D300CD692AA3B3380036BC7F /* Indicator.swift */,
+				D36F84CD2AA454270085D8C5 /* AnimatedNumberText.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -285,6 +288,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D36F84CE2AA454270085D8C5 /* AnimatedNumberText.swift in Sources */,
 				D3C767752AA06A45002B4213 /* Expense.swift in Sources */,
 				D300CD6A2AA3B3380036BC7F /* Indicator.swift in Sources */,
 				D3C7674B2AA069FE002B4213 /* ContentView.swift in Sources */,
